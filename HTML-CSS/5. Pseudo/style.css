@@ -1,0 +1,36 @@
+h1 {
+    color: orangered;
+}
+
+h1:hover {
+    background-color: navy;
+    color: white;
+}
+
+button {
+    background-color: orangered;
+    color: white;
+    border: 2;
+    border-color: orange;
+    padding: 4px 16px;
+    border-radius: 2px;
+}
+
+button:hover {
+    cursor: pointer; /*bisa ganti grab, crosshair*/
+    background-color: rgb(136, 36, 0);
+    border: 2;
+    border-color: rgb(136, 36, 0);
+}
+
+button:active {
+    background-color: rgb(53, 14, 0);
+    /*action yg terjadi ketika button di click*/
+}
+
+button:disabled {
+    background-color: grey;
+    border: 2;
+    border-color: darkgrey;
+    cursor: not-allowed;
+}

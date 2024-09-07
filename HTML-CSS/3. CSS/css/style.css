@@ -1,0 +1,15 @@
+/* namanya nggak harus style.css, terserah kita */
+
+h1,
+h2 {
+    color: red;
+    background-color: black; 
+ }
+/*
+ tag selector h1 => nge select tag h1 yg ada di body
+             => artinya semua yg ada didalam tag h1 kena styling ini
+             => color disebut properti
+             => red disebut value
+             => tidak ada batasan jumlah property yang dideklarasikan
+             => hanya content didalam tag h1 dan h2 yang terkena style ini
+ */

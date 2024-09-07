@@ -1,0 +1,47 @@
+/* namanya nggak harus style.css, terserah kita */
+
+h1,
+h2 {
+    color: red;
+    background-color: black; 
+ }
+/*
+ tag selector h1 => nge select tag h1 yg ada di body
+             => artinya semua yg ada didalam tag h1 kena styling ini
+             => color disebut properti
+             => red disebut value
+             => tidak ada batasan jumlah property yang dideklarasikan
+             => hanya content didalam tag h1 dan h2 yang terkena style ini
+             => Selector Specificity: (0, 0, 1)
+ */
+
+.text-blue {
+    color: blue;
+}
+.font-sans {
+    font-family: sans-serif;
+}
+/* 
+class selector text-blue 
+    => dimulai dengan titik
+    => bisa dipakai di beberapa element yang berbeda
+    => bisa digabungkan dengan class lain
+    => biasanya dipecahin ke styling yang kecil kecil
+    => Selector Specificity: (0, 1, 0)
+    => paling sering dipake
+    => isinya reusable, jadi biasanya nggak spesifik
+ */
+
+#greeting {
+    color: coral;
+}
+/* 
+id selector
+    => power level paling kuat
+    => Selector Specificity: (1, 0, 0)
+    => id bersifat unik
+    => kita tidak boleh mendeklarasikan id yg sama pada lebih dari satu elemen
+    => jadi, styling menggunakan id selector jarang digunakan
+    => agak haram hukumnya, menggunakan id selector yg sama pada dua tag yang berbeda
+    => harus spesifik banget pada satu tag dalam html
+*/

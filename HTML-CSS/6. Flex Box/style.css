@@ -1,0 +1,38 @@
+.box {
+    width: 50px;
+    height: 50px;
+    /* flex: 1; */
+    /*
+    1. membuat flex box berdasarkan rasio
+    2. artinya : masing masing flex box berukuran 1
+    */
+    background-color: coral;
+    border: 1px solid black;
+}
+
+.container {
+    /* width: 300px; */
+    /* height: 150px; */
+    background-color: navy;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /*
+    1. memberi tahu kepada css dan html bahwa class container akan menjadi flex container
+    2. apapun yg ada didalem container disebut sebagai flex children
+    3. flex directionnya ada dua => row dan column
+    4. kalo flex itu direction defaultnya row, jadi horizontal => dari kiri ke kanan
+    5. bisa diset column atau vertikal => dari atas ke bawah
+    6. justify-content => buat nentuin tata letak dari masing2 flex children, defaultnya flex-start
+    7. flex container => default berupa row
+       => ketika flex-direction: row
+          => justify-content untuk mengatur tata letak content dari kiri ke kanan
+          =>
+       => ketika flex-direction : column
+          => justify-content untuk mengatur tata letak content dari atas ke bawah
+    8. flex-wrap => dipake untuk mengatur bahwa flex children akan otomatis membuat line baru untuk menampilkan flex container yg udah g muat
+    */
+}

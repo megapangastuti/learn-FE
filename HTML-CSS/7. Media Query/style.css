@@ -1,0 +1,60 @@
+.nav-link-container {
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+    gap: 8px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: navy;
+    padding: 8px;
+}
+
+.menu-button {
+    background-color: orangered;
+    color: white;
+    padding: 4px 16px;
+    border: 2;
+    border-color: rgb(213, 57, 1);
+    border-radius: 2px;
+    display: none;
+}
+
+button:hover {
+    cursor: pointer; /*bisa ganti grab, crosshair*/
+    background-color: rgb(136, 36, 0);
+    border: 2;
+    border-color: rgb(136, 36, 0);
+}
+
+button:active {
+    background-color: rgb(53, 14, 0);
+    /*action yg terjadi ketika button di click*/
+}
+
+button:disabled {
+    background-color: grey;
+    border: 2;
+    border-color: darkgrey;
+    cursor: not-allowed;
+}
+
+@media only screen and (max-width: 700px){
+    /* header {
+        background-color: lightcoral;
+    } */
+    .nav-link-container{
+        display: none;
+    }
+
+    .menu-button{
+        display: inline-block;
+    }
+}
+
+/* @media only screen and(min-width: 768px){
+    
+} */
